@@ -13,4 +13,5 @@ cwd = os.getcwd()
 # Execute the git diff command and get the output
 diff_output = subprocess.check_output(git_diff_command, shell=True, cwd=cwd).decode("utf-8")
 
+# Print the output
 print(diff_output)
