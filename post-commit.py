@@ -5,6 +5,11 @@ from langchain.prompts import PromptTemplate
 from langchain_openai import ChatOpenAI
 from langchain_core.output_parsers import StrOutputParser
 
+from rich.console import Console
+from rich.markdown import Markdown
+
+console = Console()
+
 commit1 = sys.argv[1]
 commit2 = sys.argv[2]
 
@@ -46,4 +51,5 @@ chain = PROMPT | llm | output_parser
 print("Running diffs...")
 results = chain.invoke({"diff": diff_output})
 
-print(results)
+md = Markdown(results)
+console.print(md)
