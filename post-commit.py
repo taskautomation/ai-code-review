@@ -22,6 +22,7 @@ You are an expert developer and git super user. You do code reviews based on the
 * [Obvious errors] Look for obvious errors in the code.
 * [Improvements] Suggest improvements where relevant.
 * [Friendly advice] Give some friendly advice or heads up where relevant.
+* [Stop when done] Stop when you are done with the review.
 
 This is the git diff output between two commits: \n\n {diff}
 
